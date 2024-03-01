@@ -1,0 +1,21 @@
+body{
+  background-color: #D4E2F3
+  
+}
+.busca{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.botao{
+  height: 45px;
+  width: 45rem;
+  border-radius:30px;
+}
+
