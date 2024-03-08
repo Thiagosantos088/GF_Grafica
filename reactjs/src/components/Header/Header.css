@@ -8,14 +8,26 @@ body{
   justify-content: center;
 }
 .menu{
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  font-size: 30px;
+  justify-content: space-around;  
+  
 }
 
 .botao{
   height: 45px;
   width: 45rem;
   border-radius:30px;
+  width: 800px;
+  margin-top: 30px;
 }
 
+button{
+  size-adjust: 30rem;
+}
+
+#logo{
+  width: 14rem;
+}
