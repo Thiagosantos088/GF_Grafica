@@ -2,10 +2,18 @@ body{
   background-color: #D4E2F3
   
 }
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .busca{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-left: 10rem;
 }
 .menu{
   margin-top: 30px;
@@ -13,6 +21,7 @@ body{
   flex-direction: row;
   font-size: 30px;
   justify-content: space-around;  
+  font-family: "Frank Ruhl Libre", serif;
   
 }
 
@@ -30,4 +39,15 @@ button{
 
 #logo{
   width: 14rem;
+}
+
+#usuario{
+  width: 4rem;
+  height: 4rem;
+}
+#lupa{
+  width: 3rem;
+  height: 3rem;
+  margin-top: 2rem;
+  
 }
