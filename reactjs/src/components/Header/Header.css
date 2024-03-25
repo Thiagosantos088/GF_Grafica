@@ -38,7 +38,7 @@ button{
 }
 
 #logo{
-  width: 14rem;
+  width: 10rem;
 }
 
 #usuario{
@@ -77,6 +77,18 @@ footer{
   font-family: "Frank Ruhl Libre", serif;
   font-size: 30px ;
    margin-left: 70px;  
-  
+   ;
 
 }
+
+#home{
+  margin-right: 13px;
+}
+
+#produtos{
+  margin-right: 13px;
+}
+#sobrenos{
+  margin-right: 13px;
+}
+

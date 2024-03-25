@@ -18,7 +18,7 @@ return(
         </Link>
         <Link to="home">Home</Link>
         <Link to="produtos">Produtos</Link>
-        <Link to="produtos">Sobre nos</Link>
+        <Link to="sobrenos">Sobre nos</Link>
         <Link to="contatos">Contatos</Link>
         <Link to="telalogin">
         <img id='usuario' src={usuario} alt='' />
@@ -31,9 +31,9 @@ return(
     </header>
     <footer>
        <div className='menufooter'>
-        <Link to="home">Home</Link>
-        <Link to="produtos">Produtos</Link>
-        <Link to="produtos">Sobre nos</Link>
+        <Link to="home" id='home'>Home</Link>
+        <Link to="produtos" id='produtos'>Produtos</Link>
+        <Link to="produtos" id='sobrenos'>Sobre nos</Link>
         <Link to="contatos">Contatos</Link>
         </div> 
         <div className='logofooter'>

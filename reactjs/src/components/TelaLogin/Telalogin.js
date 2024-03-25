@@ -1,4 +1,6 @@
 import './Telalogin.css'
+import {Link} from 'react-router-dom';
+
 import barra1 from'../../image/barra1.png'
 import barra2 from '../../image/barra2.png'
 import insta from '../../image/instagram2.png'
@@ -10,18 +12,30 @@ function Telalogin() {
     return(
         
         <>
-            <img id='logo' src={logo} alt='' />
+            <Link to='/'>
+        <img id='logotl' src={logo} alt='' />
+        </Link>
             
-            <div className='caixa'>
-            <input className='botao' type="text" name="email" id="email" placeholder='Email'  />
-            <input className='botao' type="text" name="busca" id="busca" placeholder='Senha'  />
-            <button type="submit">Criar conta</button>
-            <button type="submit">Entrar</button>
-            <p>Login com:</p>
-            <img id='logo' src={insta} alt='' />
-            <img id='logo' src={face} alt='' />
-            <img id='logo' src={gmail} alt='' />
+
+        <main>
+            
+            <div className='login'>
+            <input className='email' type="text" name="email" id="email" placeholder='Email'  />
+            <input className='senha' type="text" name="senha" id="senha" placeholder='Senha'  />
             </div>
+            <div className='botaologin'>
+            <button id='criar' type="submit">Criar conta</button>
+            <button id='entrar' type="submit">Entrar</button>
+            </div>
+            <div className='redeslogin'>
+            <p>Login com:</p>
+            <img id='instatl' src={insta} alt='' />
+            <img id='facetl' src={face} alt='' />
+            <img id='gmailtl' src={gmail} alt='' />
+            
+            </div>
+
+        </main>
 
 
         </>
