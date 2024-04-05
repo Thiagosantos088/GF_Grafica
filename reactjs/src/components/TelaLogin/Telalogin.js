@@ -12,13 +12,14 @@ function Telalogin() {
     return(
         
         <>
-            <Link to='/'>
+        <div className='logo'>            
+        <Link to='/'>
         <img id='logotl' src={logo} alt='' />
         </Link>
-            
-
+        </div>
         <main>
             
+            <p id='txtlogin'>Login</p>
             <div className='login'>
             <input className='email' type="text" name="email" id="email" placeholder='Email'  />
             <input className='senha' type="text" name="senha" id="senha" placeholder='Senha'  />

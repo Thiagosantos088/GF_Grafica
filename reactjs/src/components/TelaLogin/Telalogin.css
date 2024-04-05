@@ -1,62 +1,72 @@
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    background-color: white;
+    margin-top: 8%;
+    border-radius: 1rem;
+    width: 35%;
+    margin-left: 32%;
+}
+
 .login{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 5rem;
 }
-.redeslogin{
-    margin-top: 5rem;
-    display: flex;
-    width: 3rem;
-    height: 3rem;
-    flex-direction: row;
-    font-size: 15px;
-    margin-left: 40rem;
-    
-    
+#email{
+    border-bottom:solid;
+    margin-top: 3rem;
+    padding-right: 20rem;
 }
-.botaologin{
-margin-top: 5rem;
-margin-left: 42rem;
 
-
+#senha{
+    border-bottom: solid;
+    margin-top: 2rem;
 }
-#logotl{
-    width: 10rem;
-    margin-left: 54rem;
-    margin-top: 50px;
-    
+#criar{
+  border-bottom: solid;
+  margin-right: 2rem;
+
 }
 #entrar{
     border-bottom: solid;
     
 }
-#criar{
-    border-bottom: solid;
-    margin-right: 20px;
-}
-#email{
-    border-bottom: solid;
-    background-color: white;
-    padding-left: 25rem;
-    margin-top: 6rem;
+.botaologin{
+    display: flex;
+    flex-direction: row;
+
+    
+    
 }
 
-#senha{
-border-bottom: solid;
-padding-left: 25rem;
-margin: 5rem;
+.redeslogin {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
 }
 
-
-main{
- background-color: white;
- margin: 14rem;
- border-radius: 2rem;
-
-}
-
-#logo{
-    margin-left: 50p;
+p{
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 
+
+.logo{
+    margin-left: 46%;
+    margin-top: 3rem;
+    width: 9rem;
+}
+
+#txtlogin{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre", serif;
+  
+}
