@@ -1,8 +1,5 @@
 import './Telalogin.css'
 import {Link} from 'react-router-dom';
-
-import barra1 from'../../image/barra1.png'
-import barra2 from '../../image/barra2.png'
 import insta from '../../image/instagram2.png'
 import face from '../../image/facebook2.png'
 import gmail from '../../image/gmail.png'
