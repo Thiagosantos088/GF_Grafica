@@ -1,0 +1,37 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    background-color: white;
+    margin-top: 8%;
+    border-radius: 1rem;
+    width: 35%;
+    margin-left: 32%;
+}
+
+#logotr{
+    margin-left: 46%;
+    margin-top: 3rem;
+    width: 9rem;
+}
+
+#txtcadastro {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre", serif;
+}
+
+.botao{
+   display: flex;
+   justify-content: center;
+
+}
+
+#criarconta{
+    margin-right: 15px;
+}
+
+.residencia{
+
+}

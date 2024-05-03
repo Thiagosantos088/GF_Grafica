@@ -5,7 +5,7 @@ import face from '../../image/facebook2.png'
 import gmail from '../../image/gmail.png'
 import logo from '../../image/logoatu.png'
 function Telalogin() {
-
+    
     return(
         
         <>
@@ -22,7 +22,9 @@ function Telalogin() {
             <input className='senha' type="text" name="senha" id="senha" placeholder='Senha'  />
             </div>
             <div className='botaologin'>
+            <Link to='/teladeregistro'>
             <button id='criar' type="submit">Criar conta</button>
+            </Link>
             <button id='entrar' type="submit">Entrar</button>
             </div>
             <div className='redeslogin'>
