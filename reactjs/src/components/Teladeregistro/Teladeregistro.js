@@ -12,16 +12,17 @@ function Teladeregistro (){
         <img id='logotr' src={logo} alt='' />
     </Link>
     </div>
-    <main>
+    <form>
     <p id='txtcadastro'>Cadastro</p>
-    <input className='Nome' type="text" name="nome" id="nome" placeholder='Nome completo'  />
-    <input className='Email' type="email" name="email" id="emailtr" placeholder='Email'  />
-    <input className='telefone' type="tel" name="telefone" id="telefone" placeholder='Telefone'  />
-    <input className='Cpf' type="number" name="cpf" id="cpf" placeholder='CPF ou CNPJ'  />
+  
+    <input  type="text" name="nome" id="nometr" placeholder='Nome completo'  />
+    <inpu type="email" name="email" id="emailtr" placeholder='Email'  />
+    <input  type="tel" name="telefone" id="telefonetr" placeholder='Telefone'  />
+    <input  type="number" name="cpf" id="cpftr" placeholder='CPF ou CNPJ'  />
     <div className='residencia'>
-    <input className='Cep' type="number" name="cep" id="cep" placeholder='CEP'  />
-    <input className='Endereco' type="text" name="endereco" id="endereco" placeholder='Endereço'  />
-    <input className='Numero' type="number" name="numero" id="numero" placeholder='Numero'  />
+    <input  type="number" name="cep" id="ceptr" placeholder='CEP'  />
+    <input  type="text" name="endereco" id="enderecotr" placeholder='Endereço'  />
+    <input type="number" name="numero" id="numerotr" placeholder='Numero'  />
      </div>
 
      
@@ -32,20 +33,7 @@ function Teladeregistro (){
     <button id='criarconta' type="submit">Criar conta</button>
     <button id='reset' type="reset">Limpar</button>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    </main>
+    </form>
       </>
     )
 }

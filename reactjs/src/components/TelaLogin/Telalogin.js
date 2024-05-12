@@ -19,7 +19,7 @@ function Telalogin() {
             <p id='txtlogin'>Login</p>
             <div className='login'>
             <input className='email' type="text" name="email" id="email" placeholder='Email'  />
-            <input className='senha' type="text" name="senha" id="senha" placeholder='Senha'  />
+            <input className='senha' type="password" name="senha" id="senha" placeholder='Senha'  />
             </div>
             <div className='botaologin'>
             <Link to='/teladeregistro'>

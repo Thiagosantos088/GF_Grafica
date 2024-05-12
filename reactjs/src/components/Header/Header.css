@@ -1,6 +1,6 @@
 body{
   background-color: #D4E2F3
-  
+
 }
 header{
   position: fixed;
@@ -8,17 +8,18 @@ header{
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #D4E2F3
 }
 .busca{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-left: 10rem;
 }
 .menu{
   margin-top: 30px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-size: 30px;
   justify-content: space-around;  
   font-family: "Frank Ruhl Libre", serif;
@@ -31,6 +32,7 @@ header{
   border-radius:30px;
   width: 800px;
   margin-top: 30px;
+ 
 }
 
 button{
@@ -50,45 +52,5 @@ button{
   height: 3rem;
   margin-top: 2rem;
   
-}
-
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 50px;
- bottom: 0;
-  position: fixed;
-  width: 90%;
-  text-align: center;
-
-}
-.logofooter{
-  width: 10rem;
-}
-
-.redesfooter{
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  
-}
-.menufooter{
-  font-family: "Frank Ruhl Libre", serif;
-  font-size: 30px ;
-   margin-left: 70px;  
-   ;
-
-}
-
-#home{
-  margin-right: 13px;
-}
-
-#produtos{
-  margin-right: 13px;
-}
-#sobrenos{
-  margin-right: 13px;
 }
 

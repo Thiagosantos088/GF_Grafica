@@ -1,7 +1,13 @@
-function Sobrenos() {
-    return(
-        <p>teste</p>
-    )
-}
+
+function Sobrenos(nome, sub) {
+        return(
+            <>
+
+            </>
+        )
+    }
+
+
 
 export default Sobrenos;
+

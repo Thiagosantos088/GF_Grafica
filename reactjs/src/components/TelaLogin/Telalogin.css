@@ -19,6 +19,7 @@ main{
 }
 #email{
     border-bottom:solid;
+    border-width: 1px;
     margin-top: 3rem;
     padding-right: 20rem;
 }
@@ -26,14 +27,20 @@ main{
 #senha{
     border-bottom: solid;
     margin-top: 2rem;
+    border-width: 1px;
+
 }
 #criar{
   border-bottom: solid;
+  border-width: 1px;
+
   margin-right: 2rem;
 
 }
 #entrar{
     border-bottom: solid;
+    border-width: 1px;
+
     
 }
 .botaologin{
@@ -43,6 +50,7 @@ main{
     
     
 }
+
 
 .redeslogin {
     margin-top: 5rem;
