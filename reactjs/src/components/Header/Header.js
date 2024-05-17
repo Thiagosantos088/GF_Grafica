@@ -5,32 +5,38 @@ import lupa from '../../image/lupa.png'
 import whats from '../../image/whatsapp.png'
 import face from '../../image/facebook.png'
 import insta from '../../image/instagram.png'
+import carrinho from '../../image/icons8-carrinho-64.png'
 import './Header.css';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 function Header () {
 return(
     <>
     <header>
         <div  className='menu'>
-        <Link to='home'>
+        <Link to='/'>
         <img id='logo' src={logo} alt='' />
         </Link>
-        <Link to="home">Home</Link>
-        <Link to="produtos">Produtos</Link>
-        <Link to="sobrenos">Sobre nos</Link>
-        <Link to="contatos">Contatos</Link>
-        <Link to="telalogin">
+
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/produtos">Produtos</NavLink>
+        <NavLink to="/sobrenos">Sobre nos</NavLink>
+        <NavLink to="/contatos">Contatos</NavLink>
+        <div className='logos'>
+        <img id='carrinho' src={carrinho} />
+        <NavLink to="/telalogin">
         <img id='usuario' src={usuario} alt='' />
-        </Link>
+        </NavLink>
+        </div>
         </div>
         <div className='busca'>
-        <input className='botao' type="text" name="busca" id="busca" placeholder='     Procure seu produto'  />
+        <input className='pesquisa' type='text' placeholder='Pesquise seu produto' />       
         <img id='lupa' src={lupa} alt='' />
         </div>
     </header>
     </>
    )
+  
 }
 
 export default Header;

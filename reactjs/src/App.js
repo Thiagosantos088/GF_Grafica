@@ -6,12 +6,12 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Teladeregistro from './components/Teladeregistro/Teladeregistro'
 import Telalogin from './components/TelaLogin/Telalogin';
-import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter  } from 'react-router-dom';
 
 function App() {
   return (
     <>
-    <Router>
+    <BrowserRouter>
       <Routes>
          <Route path='/' element={<Home/>}/>
          <Route path='/contatos' element={<Contatos/>}/>
@@ -22,7 +22,7 @@ function App() {
          <Route path='/teladeregistro' element={<Teladeregistro/>} />
 
          </Routes>
-    </Router>
+    </BrowserRouter>
     
     </>
   );
