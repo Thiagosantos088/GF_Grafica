@@ -8,6 +8,7 @@ import blocos from '../../image/blocos.png'
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer";
 import "./Produtos.css"
+import CartaoVisita from "../Cartao_de_visita/CartaoVisita";
 
 
 function Produtos(nome,imagem, valor,apartir,un) {
@@ -15,8 +16,8 @@ function Produtos(nome,imagem, valor,apartir,un) {
             <>
             <Header/>
             <div className="bloco1">
-            <Cards nome='Cartão de visita' imagem= {cartao} apartir="A partir de" valor="R$ 80,00"un="500 un" />
-            <Cards nome='Banner' imagem= {banner} apartir="A partir de" valor="R$ 60,00" un="1 un"/>
+            <Cards nome='Cartão de visita' imagem= {cartao} apartir="A partir de" valor="R$ 80,00"un="500 un" link="/cartaovisita" />
+            <Cards nome='Banner' imagem= {banner} apartir="A partir de" valor="R$ 60,00" un="1 un" link="/banner"/>
             <Cards nome='Envelope Personalizado' imagem= {envelope} apartir="A partir de" valor="R$ 140,00" un="500 un"/>
             </div>
             < div className="bloco2">

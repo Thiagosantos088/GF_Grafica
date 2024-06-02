@@ -18,7 +18,7 @@ function Teladeregistro (){
     <input  type="text" name="nome" id="nometr" placeholder='Nome completo'  />
     <inpu type="email" name="email" id="emailtr" placeholder='Email'  />
     <input  type="tel" name="telefone" id="telefonetr" placeholder='Telefone'  />
-    <input  type="number" name="cpf" id="cpftr" placeholder='CPF ou CNPJ'  />
+    m
     <div className='residencia'>
     <input  type="number" name="cep" id="ceptr" placeholder='CEP'  />
     <input  type="text" name="endereco" id="enderecotr" placeholder='Endereço'  />

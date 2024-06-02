@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Teladeregistro from './components/Teladeregistro/Teladeregistro'
 import Telalogin from './components/TelaLogin/Telalogin';
+import CartaoVisita from './components/Cartao_de_visita/CartaoVisita';
+import Banner from './components/Banner/Banner';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter  } from 'react-router-dom';
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
          <Route path='/sobrenos' element={<Sobrenos/>}/>
          <Route path='/telalogin' element={<Telalogin/>}/>
          <Route path='/teladeregistro' element={<Teladeregistro/>} />
+         <Route path='/cartaovisita' element={<CartaoVisita/>} />
+         <Route path='/banner' element={<Banner/>} />
+
 
          </Routes>
     </BrowserRouter>
