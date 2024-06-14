@@ -1,0 +1,122 @@
+#botpagamento{
+  background-color: #7aba78;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  width: 20%;
+}
+
+#logopa{
+   margin-left: 46%;
+   margin-top: 3rem;
+}
+.formapagamento{
+  display: flex;
+  justify-content: center;
+padding: 2rem;}
+
+#pagpix{
+  margin-right: 1rem;
+}
+
+#pagcartao{
+  margin-left: 20rem;
+  margin-right: 1rem;
+
+}
+
+.card-details div {
+  margin-bottom: 10px;
+}
+
+.card-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+.card-details{
+  padding: 2rem;
+}
+.card-details input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-page h1 {
+  margin-bottom: 20px;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card-details div {
+  margin-bottom: 10px;
+}
+
+.card-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card-details input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+} */

@@ -1,7 +1,7 @@
-#imagem {
-   margin-top: 1%;
-   width: 20%;
-   margin-left: 1rem;
+
+
+#imgcv {
+
  }
  
  .material,
@@ -48,13 +48,15 @@
    flex-direction: column;
    margin-top: 10%;
    background-color: white;
-   padding: 0 5%;
+   padding-right: 2%;
+   padding-left: 2%;
    box-shadow: 14px 29px 15px -3px rgba(0, 0, 0, 0.1);
  }
  
  .form {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
    align-items: center;
  }
  
@@ -86,5 +88,7 @@
  .direita {
    display: flex;
    flex-direction: column;
+   margin-right: 4rem;
+
  }
  

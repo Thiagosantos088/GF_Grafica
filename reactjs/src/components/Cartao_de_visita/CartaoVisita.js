@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup, faBorderTopLeft, faPalette, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 import cartao from "../../image/Cartao_de_visita.png";
 import './CartaoVisita.css';
 
 function CartaoVisita() {
   return (
     <div className="form">
-      <img id="imagem" src={cartao} alt="Cartão de Visita" />
       <form id="formulario">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />
@@ -48,8 +48,9 @@ function CartaoVisita() {
       <div className="direita">
         <input id="valortotal" type="text" placeholder="Valor total" />
         <div className="botoes">
-          <button id="avancar">Avançar</button>
-          <button id="voltar">Voltar</button>
+        <Link to='/paginaupload'><button id="avancar">Avançar</button></Link>
+        <Link to='/produtos'><button id="voltar">Voltar</button></Link>
+
         </div>
       </div>
     </div>
