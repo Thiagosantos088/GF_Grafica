@@ -15,7 +15,7 @@ function Telalogin() {
         <img id='logotl' src={logo} alt='' />
         </Link>
         </div>
-        <main>
+        <div className='container-login'>
             
             <p id='txtlogin'>Login</p>
             <div className='login'>
@@ -36,8 +36,7 @@ function Telalogin() {
             
             </div>
 
-        </main>
-
+            </div>
 
         </>
     )

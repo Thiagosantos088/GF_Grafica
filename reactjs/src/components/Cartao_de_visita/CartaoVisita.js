@@ -7,6 +7,8 @@ import './CartaoVisita.css';
 function CartaoVisita() {
   return (
     <div className="form">
+                  <img id='imgcv' src={cartao} alt='' />
+
       <form id="formulario">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />

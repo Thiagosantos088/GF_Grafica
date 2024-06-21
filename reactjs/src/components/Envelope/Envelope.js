@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup, faBorderTopLeft, faPalette, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
-import cartao from "../../image/Cartao_de_visita.png";
+import envelope from "../../image/Envolepes-personalizado.png";
 import {Link} from 'react-router-dom';
 import './Envelope.css';
 
 function Envelope() {
   return (
     <div className="form">
+                  <img id='imgen' src={envelope} alt='' />
+
       <form id="formulario">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />

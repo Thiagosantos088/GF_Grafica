@@ -1,6 +1,8 @@
 
 
 #imgcv {
+    width: 18%;
+    margin-left: 4rem;
 
  }
  
@@ -46,10 +48,10 @@
  #formulario {
    display: flex;
    flex-direction: column;
-   margin-top: 10%;
    background-color: white;
    padding-right: 2%;
    padding-left: 2%;
+   width: 30%;
    box-shadow: 14px 29px 15px -3px rgba(0, 0, 0, 0.1);
  }
  

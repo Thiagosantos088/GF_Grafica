@@ -12,7 +12,8 @@ function Teladeregistro (){
         <img id='logotr' src={logo} alt='' />
     </Link>
     </div>
-    <form>
+    <div className='container-registro'>
+    
     <p id='txtcadastro'>Cadastro</p>
   
     <input  type="text" name="nome" id="nometr" placeholder='Nome completo'  />
@@ -33,8 +34,8 @@ function Teladeregistro (){
     <button id='criarconta' type="submit">Criar conta</button>
     <button id='reset' type="reset">Limpar</button>
     </div>
-    </form>
-      </>
+    </div>     
+     </>
     )
 }
 

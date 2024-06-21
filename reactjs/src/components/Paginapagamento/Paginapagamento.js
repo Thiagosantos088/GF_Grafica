@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import './Paginapagamento.css';
-import logo from '../../image/logoatu.png'
-
-
-
-
+import logo from '../../image/logoatu.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Paginapagamento = () => {
     const [paymentMethod, setPaymentMethod] = useState('pix');
@@ -14,6 +13,8 @@ const Paginapagamento = () => {
         expiry: '',
         cvc: '',
     });
+    const [showCep, setShowCep] = useState(false);
+    const [cep, setCep] = useState('');
 
     const handlePaymentMethodChange = (method) => {
         setPaymentMethod(method);
@@ -27,19 +28,24 @@ const Paginapagamento = () => {
         });
     };
 
+    const handleCepChange = (e) => {
+        setCep(e.target.value);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Detalhes do pagamento:', paymentMethod === 'pix' ? 'Pix' : cardDetails);
     };
 
     return (
+         
+
         <div className="Paginapagamento">
-                  <img id='logopa' src={logo} alt='' />
             <form onSubmit={handleSubmit}>
                 <div className="formapagamento">
                     <label>
                         <input
-                        id='pagpix'
+                            id='pagpix'
                             type="radio"
                             name="formapagamento"
                             value="pix"
@@ -50,7 +56,7 @@ const Paginapagamento = () => {
                     </label>
                     <label>
                         <input
-                        id='pagcartao'
+                            id='pagcartao'
                             type="radio"
                             name="formapagamento"
                             value="cartao"
@@ -60,6 +66,43 @@ const Paginapagamento = () => {
                         Cartão de Crédito
                     </label>
                 </div>
+                
+                <div className="cep-container">
+                    <div className="cep-header" onClick={() => setShowCep(!showCep)}>
+                        <label>CEP</label>
+                        <FontAwesomeIcon icon={showCep ? faChevronUp : faChevronDown} />
+                    </div>
+                    {showCep && (
+                        <div className="cep-details">
+                            <input
+                                type="text"
+                                name="cep"
+                                value={cep}
+                                onChange={handleCepChange}
+                                placeholder="Digite seu CEP"
+                            />
+                             <input
+                                type="text"
+                                name="rua"
+                                onChange={handleCepChange}
+                                placeholder="Rua"
+                            />
+                            <input
+                                type="text"
+                                name="Cidade"
+                                onChange={handleCepChange}
+                                placeholder="Cidade"
+                            />
+                            <input
+                                type="text"
+                                name="numerorua"
+                                onChange={handleCepChange}
+                                placeholder="Numero da residencia"
+                            />
+                        </div>
+                    )}
+                </div>
+
                 {paymentMethod === 'cartao' && (
                     <div className="card-details">
                         <div>
@@ -100,23 +143,12 @@ const Paginapagamento = () => {
                         </div>
                     </div>
                 )}
-
-
+                <Link to='/pagamentosucesso'>
                 <button id='botpagamento' type="submit">Pagar</button>
-
-                <label>Cadastrar CEP</label>
-
-                        <input
-                        id='pagpix'
-                            type="radio"
-                            name="formapagamento"
-                            value="pix"
-                        />
+                </Link>
             </form>
-            
         </div>
     );
 };
 
 export default Paginapagamento;
-

@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup, faBorderTopLeft, faPalette, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
-import cartao from "../../image/Cartao_de_visita.png";
+import Pasta from "../../image/Pasta.png";
 import {Link} from 'react-router-dom';
 import './Pastas.css';
 
 function Pastas() {
   return (
     <div className="form">
+                  <img id='imgpa' src={Pasta} alt='' />
+
       <form id="formulario">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />

@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup, faBorderTopLeft, faPalette, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
-import cartao from "../../image/Cartao_de_visita.png";
+import folheto from "../../image/folheto.png";
 import {Link} from 'react-router-dom';
 import './Folheto.css';
 
 function Folheto() {
   return (
     <div className="form">
+                  <img id='imgfo' src={folheto} alt='' />
+
       <form id="formulario">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />

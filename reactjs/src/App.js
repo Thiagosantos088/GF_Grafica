@@ -11,6 +11,7 @@ import Pastas from './components/Pastas/Pastas';
 import PaymentForm from './components/Paginapagamento/Paginapagamento';
 import Folheto from './components/Folheto/Folheto';
 import Blocos from './components/Blocos/Blocos';
+import Pagamentosucesso from './components/Pagamentosucesso/Pagamentosucesso';
 import Paginaupload from './components/Paginaupload/PaginaUpload';
 import CartaoVisita from './components/Cartao_de_visita/CartaoVisita';
 import Banner from './components/Banner/Banner';
@@ -35,6 +36,8 @@ function App() {
          <Route path='/folheto' element={<Folheto/>} />
          <Route path='/blocos' element={<Blocos/>} />
          <Route path='/paginaupload' element={<Paginaupload/>} />
+         <Route path='/pagamentosucesso' element={<Pagamentosucesso/>} />
+
 
 
 
