@@ -8,6 +8,7 @@ import Teladeregistro from './components/Teladeregistro/Teladeregistro'
 import Telalogin from './components/TelaLogin/Telalogin';
 import Envelope from './components/Envelope/Envelope';
 import Pastas from './components/Pastas/Pastas';
+import Areadocliente from './components/Areadocliente/Areadocliente';
 import PaymentForm from './components/Paginapagamento/Paginapagamento';
 import Folheto from './components/Folheto/Folheto';
 import Blocos from './components/Blocos/Blocos';
@@ -37,6 +38,7 @@ function App() {
          <Route path='/blocos' element={<Blocos/>} />
          <Route path='/paginaupload' element={<Paginaupload/>} />
          <Route path='/pagamentosucesso' element={<Pagamentosucesso/>} />
+         <Route path='/areadocliente' element={<Areadocliente/>} />
 
 
 

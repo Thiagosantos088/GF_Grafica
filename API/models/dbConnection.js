@@ -13,8 +13,8 @@ conecta.connect((err) => {
         reject(err);
         return;
     }
-    console.log('Conectado do banco. ;)');
-});
+    console.log('Conectado no banco dbGFGrafica. ;)');
+}); 
 
     module.exports =  conecta;
 
