@@ -6,10 +6,12 @@ import './CartaoVisita.css';
 
 function CartaoVisita() {
   return (
-    <div className="form">
-                  <img id='imgcv' src={cartao} alt='' />
+    <div className="formcv">
 
-      <form id="formulario">
+                  <img id='imgcv' src={cartao} alt='' />
+                  
+
+      <form id="formulariocv">
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />
           <h1>Material</h1>

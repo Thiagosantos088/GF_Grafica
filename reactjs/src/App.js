@@ -17,10 +17,13 @@ import Paginaupload from './components/Paginaupload/PaginaUpload';
 import CartaoVisita from './components/Cartao_de_visita/CartaoVisita';
 import Banner from './components/Banner/Banner';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter  } from 'react-router-dom';
+import { UserProvider } from './components/Contextogeral/UserGeral.js'; 
+
 
 function App() {
   return (
     <>
+    <UserProvider>
     <BrowserRouter>
       <Routes>
          <Route path='/' element={<Home/>}/>
@@ -49,6 +52,7 @@ function App() {
 
          </Routes>
     </BrowserRouter>
+    </UserProvider>
     
     </>
   );

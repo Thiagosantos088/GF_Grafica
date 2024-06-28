@@ -1,16 +1,20 @@
+// AreaDoCliente.js
+import React, { useContext } from 'react';
+import { UserContext } from '../Contextogeral/UserGeral.js';
+import Header from '../Header/Header.js';
 
+function AreaDoCliente() {
+    const { user } = useContext(UserContext);
 
+    return (
+        <>            
+            <Header/>
+            <div className='testearea'>
+            <p>Bem-vindo, {user ? user.nome : 'Visitante'}!</p>
+            </div>
 
-
-function Areadocliente () {
-    return(
-    <>
-     <h1>teste</h1>
-     <h1>teste</h1>
-    </>
-    )
-
-
+        </>
+    );
 }
 
-export default Areadocliente;
+export default AreaDoCliente;

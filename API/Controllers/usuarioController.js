@@ -5,24 +5,29 @@ const dbConecta = require('../models/dbConnection');
 // Rota GET para obter todos os usuários
 router.get('/', (req, res) => {
     dbConecta.query('SELECT * FROM tbUsuario', (err, result) => {
-        if (err) throw err;
-        res.json(result);
+        if (err) {
+            res.status(500).json({ message: 'Erro ao buscar usuários.' });
+        } else {
+            res.json(result);
+        }
     });
 });
 
 // Rota POST para adicionar um novo usuário
-router.post('/', (req, res) => {
-    const { idUsuario, nome, email, tel } = req.body;
-    const query = 'INSERT INTO tbUsuario (idUsu, nome, email, tel) VALUES (?,?,?,?)';
+router.post('/criar', (req, res) => {
+    const { nome, email, senha } = req.body;
+    const query = 'INSERT INTO tbUsuario (nome, email, senha) VALUES (?, ?, ?)';
 
-    dbConecta.query(query, [idUsuario, nome, email, tel], (err, result) => {
+    dbConecta.query(query, [nome, email, senha], (err, result) => {
         if (err) {
+            console.error('Erro ao adicionar usuário:', err);
             res.status(500).json({ message: 'Erro ao adicionar usuário.' });
         } else {
+            console.log('Usuário adicionado com sucesso:', result);
             res.status(201).json({
-                message: 'Usuario adicionado!',
+                message: 'Usuário adicionado com sucesso!',
                 idUsuario: result.insertId,
-                body: req.body
+                user: { nome, email }
             });
         }
     });

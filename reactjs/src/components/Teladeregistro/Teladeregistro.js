@@ -30,7 +30,7 @@ function Teladeregistro (){
     <input className='bairro' type="bairro" name="bairro" id="bairro" placeholder='Bairro'  />
     <input className='senhareg' type="password" name="senhareg" id="senhareg" placeholder='Senha'  />
     <input className='senhareg' type="password" name="senhareg" id="confreg" placeholder='Confirme a senha'  />
-    <div className='botao'>
+    <div className='botaoreg'>
     <button id='criarconta' type="submit">Criar conta</button>
     <button id='reset' type="reset">Limpar</button>
     </div>

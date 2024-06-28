@@ -5,24 +5,27 @@ import face from '../../image/facebook2.png';
 import gmail from '../../image/gmail.png';
 import logo from '../../image/logoatu.png';
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { UserContext } from '../../components/Contextogeral/UserGeral.js'; // Verifique o caminho correto do contexto
 
 function Telalogin() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [error, setError] = useState('');
+    const { setUser } = useContext(UserContext); // Use o contexto corretamente
 
     const handleLogin = async () => {
         try {
             const response = await axios.post('http://localhost:3000/usuario/login', { email, senha });
             if (response.data.user) {
-                console.log('Usuário:', response.data.user);
-                // Redirecionar para outra página após login bem-sucedido
-                navigate('/areadocliente'); 
+                setUser(response.data.user); // Armazene os dados do usuário no contexto
+                navigate('/areadocliente'); // Redirecione para a área do cliente após o login
+            } else {
+                setError('Credenciais inválidas.');
             }
         } catch (error) {
-            setError(error.response.data.message || 'Erro ao fazer login');
+            setError(error.response?.data?.message || 'Erro ao fazer login');
         }
     };
 
@@ -30,7 +33,7 @@ function Telalogin() {
         <>
             <div className='logo'>
                 <Link to='/'>
-                    <img id='logotl' src={logo} alt='' />
+                    <img id='logotl' src={logo} alt='Logo' />
                 </Link>
             </div>
             <div className='container-login'>
@@ -64,9 +67,9 @@ function Telalogin() {
                 </div>
                 <div className='redeslogin'>
                     <p>Login com:</p>
-                    <img id='instatl' src={insta} alt='' />
-                    <img id='facetl' src={face} alt='' />
-                    <img id='gmailtl' src={gmail} alt='' />
+                    <img id='instatl' src={insta} alt='Instagram' />
+                    <img id='facetl' src={face} alt='Facebook' />
+                    <img id='gmailtl' src={gmail} alt='Gmail' />
                 </div>
             </div>
         </>

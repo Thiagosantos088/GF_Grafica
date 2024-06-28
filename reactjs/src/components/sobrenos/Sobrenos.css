@@ -1,0 +1,41 @@
+#Logomarca{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    margin-top: 16%;
+    font-size: 35px;
+    background-color: white;
+    font-family: "Frank Ruhl Libre", serif;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-family: "Frank Ruhl Libre", serif;
+    margin-top: 4rem;
+
+}
+
+#ondeestamos{
+    margin-right: 2rem;
+    font-size: 27px;
+
+
+}
+.sobreagf{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+#titulogf{
+    margin-right: 2rem;
+    font-size: 27px;
+    font-family: "Frank Ruhl Libre", serif;
+
+}
