@@ -1,11 +1,7 @@
-
-/* Estilo da imagem do Banner */
-
 #imgba {
   width: 18%;
   margin-left: 4rem;
 }
-
 
 /* Estilo dos campos material, formato, cores e acabamento */
 .material,
@@ -21,7 +17,6 @@
 .material {
   margin-top: 2rem;
 }
-
 
 #escolha1 {
   margin-bottom: 8rem;
@@ -46,12 +41,12 @@ h1 {
 
 #formulario {
   display: flex;
-   flex-direction: column;
-   background-color: white;
-   padding-right: 2%;
-   padding-left: 2%;
-   width: 30%;
-   box-shadow: 14px 29px 15px -3px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  background-color: white;
+  padding-right: 2%;
+  padding-left: 2%;
+  width: 30%;
+  box-shadow: 14px 29px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .form {
@@ -64,6 +59,15 @@ h1 {
 #avancar {
   margin-top: 2rem;
   background-color: #7aba78;
+  width: 8rem;
+  padding: 10px;
+}
+
+#limpar {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+  background-color: #B80000;
   width: 8rem;
   padding: 10px;
 }
@@ -90,5 +94,4 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-right: 4rem;
-
 }

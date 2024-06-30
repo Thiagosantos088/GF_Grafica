@@ -1,5 +1,6 @@
 import './Sobrenos.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 
 function Sobrenos() {
@@ -23,14 +24,16 @@ function Sobrenos() {
         </div>
         <div className='sobreagf'>
         <h1 id='titulogf'>SOBRE A GF !</h1>
-        </div>
-       <p>Surgimos no mercado em 2012, somos uma empresa familiar e nosso foco é a impressão em off-set (uma técnica indireta que transfere a imagem de uma placa metálica para o papel através de um cilindro de borracha.), uma gráfica plana.
+        
+       <p id='tithistoria' >Surgimos no mercado em 2012, somos uma empresa familiar e nosso foco é a impressão em off-set (uma técnica indireta que transfere a imagem de uma placa metálica para o papel através de um cilindro de borracha.), uma gráfica plana.
 
 Oferecemos uma ampla gama de serviços gráficos personalizados para atender às suas necessidades específicas. Desde cartões de visita elegantes, blocos e materiais promocionais , nossos serviços são personalizados e de alta qualidade para atender às necessidades específicas dos clientes.
 
 Temos uma flexibilidade que nos permite adaptar-nos rapidamente às demandas do mercado, assegurando entregas pontuais e um serviço que você pode confiar.
 
 Procuramos mantém tradições familiares, combinando experiência com inovação para competir no mercado gráfico.</p>
+</div>
+<Footer/>
              </main>
          
             </>

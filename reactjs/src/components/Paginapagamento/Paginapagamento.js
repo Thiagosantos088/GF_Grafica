@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Paginapagamento.css';
-import logo from '../../image/logoatu.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -38,10 +37,9 @@ const Paginapagamento = () => {
     };
 
     return (
-         
-
         <div className="Paginapagamento">
             <form onSubmit={handleSubmit}>
+                {/* Seleção do método de pagamento */}
                 <div className="formapagamento">
                     <label>
                         <input
@@ -66,7 +64,8 @@ const Paginapagamento = () => {
                         Cartão de Crédito
                     </label>
                 </div>
-                
+
+                {/* Detalhes do CEP (opcional) */}
                 <div className="cep-container">
                     <div className="cep-header" onClick={() => setShowCep(!showCep)}>
                         <label>CEP</label>
@@ -81,7 +80,7 @@ const Paginapagamento = () => {
                                 onChange={handleCepChange}
                                 placeholder="Digite seu CEP"
                             />
-                             <input
+                            <input
                                 type="text"
                                 name="rua"
                                 onChange={handleCepChange}
@@ -103,6 +102,7 @@ const Paginapagamento = () => {
                     )}
                 </div>
 
+                {/* Detalhes do Cartão (aparece apenas se Cartão de Crédito selecionado) */}
                 {paymentMethod === 'cartao' && (
                     <div className="card-details">
                         <div>
@@ -143,8 +143,10 @@ const Paginapagamento = () => {
                         </div>
                     </div>
                 )}
+
+                {/* Botão de Pagamento */}
                 <Link to='/pagamentosucesso'>
-                <button id='botpagamento' type="submit">Pagar</button>
+                    <button id='botpagamento' type="submit">Pagar</button>
                 </Link>
             </form>
         </div>
