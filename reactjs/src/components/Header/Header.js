@@ -1,11 +1,10 @@
-import logo from '../../image/logoatu.png'
-import usuario from '../../image/icons8-usuário-72.png';
-import Footer from '../Footer/Footer';
-import lupa from '../../image/lupa.png'
-import whats from '../../image/whatsapp.png'
-import face from '../../image/facebook.png'
-import insta from '../../image/instagram.png'
-import carrinho from '../../image/icons8-carrinho-64.png'
+import logo from '../../img/logoatu.png';
+import usuario from '../../img/usu.png';
+import lupa from '../../img/L.png';
+// import whats from '../../img/wh.png'
+// import face from '../../img/f.png'
+// import insta from '../../img/IN.png'
+import carrinho from '../../img/CA.png'
 import './Header.css';
 import {Link, NavLink} from 'react-router-dom';
 
@@ -29,9 +28,10 @@ return(
         </NavLink>
         </div>
         </div>
+        <div class='hlkj'>
         <div className='busca'>
-        <input className='pesquisa' type='text' placeholder='Pesquise seu produto' />       
-        <img id='lupa' src={lupa} alt='' />
+        <input  type='text' className='pesquisa' placeholder='Pesquise seu produto'/>    
+        </div>
         </div>
     </header>
     </>
