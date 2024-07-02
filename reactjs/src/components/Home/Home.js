@@ -46,7 +46,7 @@ function Home(){
         {/*P2*/}
         <div class="vao">
         <div class="buque" id="marh">
-          <h2>OS MAIS VENDIDOS</h2>
+          <h2 id="fuieg">OS MAIS VENDIDOS</h2>
           <div id="imgcf">
           <img src={HE} id="imge" class="imge"/>
           <img src={HV} id="imge" class="imge"/>

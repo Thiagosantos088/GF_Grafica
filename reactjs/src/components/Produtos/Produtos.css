@@ -1,15 +1,17 @@
-/* .bloco1{
+ .bloco1{
     display: flex;
     justify-content: center;
+    margin-bottom: -190px;
+    margin-top:10px ;
     margin-right: 10%;
-} */
+} 
 
-/* .bloco2{
+.bloco2{
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
-    margin-top:-11rem ;
+    margin-top:10px ;
     margin-right: 10%;
 
 }
- */
+ 

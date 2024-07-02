@@ -30,7 +30,13 @@ h2{
 }
 .pnt{
     margin-top: 20px;
-    margin-left: 20px;   
+    margin-left: 40px;   
+    display: flex;
+    background-color: #ffffff
+}
+.pntu{
+    margin-top: 20px;
+    margin-left: 60px;   
     display: flex;
     background-color: #ffffff
 }
@@ -48,24 +54,31 @@ h2{
     width: 33px;
 }
 #h2-3{
-    margin-top: 35px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 23px;
+    background-color:#ffffff;
+}
+#h2-9{
+    margin-left: 15px;
+    margin-top: 30px;
     font-size: 23px;
     background-color:#ffffff;
 }
 #h2-4{
+    margin-left: 170px;
     font-size: 14px;
     background-color:#ffffff;
 }
 #h2-5{
-    margin-left: 110px;
+    margin-left: 170px;
     font-size: 9px;
     background-color:#ffffff;
 }
 .caixa{
-    margin-left: 10px;
+    margin-left: 100px;
     flex-grow: 1;
     background-color: #ffffff;
-    width: 230px;
     height: 190px;
 }
 #h2-6{
@@ -95,4 +108,7 @@ h2{
     border-style: solid;
     border-width: 10px;
     border-color: #d4e2f3;
+}
+#nume{
+    background: #ffffff;
 }

@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup, faBorderTopLeft, faPalette, faSwatchbook } from '@fortawesome/free-solid-svg-icons';
+import banner from "../../img/PB.png";
 import { Link } from 'react-router-dom';
-import cartao from "../../img/PC.png"; // Importa a imagem utilizada para os cartões de visita
-import './CartaoVisita.css'; // Importa o arquivo de estilos CSS específico para este componente
+import './Banner.css';
 
-function CartaoVisita() {
-  // Estados para controlar as seleções do usuário e o valor total
+function Banner() {
+  // Estados para controlar as escolhas do usuário e o valor total
   const [material, setMaterial] = useState(0);
   const [formato, setFormato] = useState(0);
   const [cores, setCores] = useState(0);
   const [acabamento, setAcabamento] = useState(0);
   const [total, setTotal] = useState(0);
 
-  // Função para lidar com a mudança nas seleções (material, formato, cores, acabamento)
-  const handleSelectChange = (e, setFunction) => {
-    const value = parseInt(e.target.value); // Converte o valor selecionado para inteiro
-    setFunction(value); // Atualiza o estado correspondente (material, formato, cores, acabamento)
+  // Função para atualizar o estado correspondente e recalcular o valor total
+  const mudancadevalor = (e, setFunction) => {
+    const value = parseInt(e.target.value);
+    setFunction(value);
     // Calcula o novo valor total somando os estados de material, formato, cores, acabamento e o valor atual
     setTotal(material + formato + cores + acabamento + value);
   };
@@ -26,8 +26,8 @@ function CartaoVisita() {
     return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   };
 
-  // Função para limpar todos os valores de seleção e o valor total
-  const resetValues = () => {
+  // Função para limpar todos os valores de escolha e o valor total
+  const limparvalor = () => {
     setMaterial(0);
     setFormato(0);
     setCores(0);
@@ -36,23 +36,22 @@ function CartaoVisita() {
   };
 
   return (
-    <div className="formcv">
-      {/* Imagem do cartão de visita */}
-      <img id='imgcv' src={cartao} alt='' />
+    <div className="form">
 
-      {/* Formulário para escolha de material, formato, cores, acabamento */}
-      <form id="formulariocv">
+      {/* Imagem do Banner */}
+      <img id='imgba' src={banner} alt='' />
+
+      {/* Formulário para escolha de materiais, formatos, cores, acabamento */}
+      <form id="formulario">
         {/* Seção de Material */}
         <div className="material">
           <FontAwesomeIcon id="icon" icon={faLayerGroup} />
           <h1>Material</h1>
         </div>
-        <select id="escolha" onChange={(e) => handleSelectChange(e, setMaterial)}>
-          <option value="0">Selecione</option>
-          <option value="10">Papel Couche Brilho 250g (10,00)</option>
-          <option value="15">Papel Couche Brilho 300g (15,00)</option>
-          <option value="20">Papel perolizado 300g (20,00)</option>
-          <option value="12">Kraft 240G (12,00)</option>
+        <select id="escolha" onChange={(e) => mudancadevalor(e, setMaterial)} value={material}>
+          <option value={0}>Selecione</option>
+          <option value={10}>Lona brilho 340g</option>
+          <option value={15}>Lona fosca 340g</option>
         </select>
 
         {/* Seção de Formato */}
@@ -60,10 +59,12 @@ function CartaoVisita() {
           <FontAwesomeIcon id="icon" icon={faBorderTopLeft} />
           <h1>Formato</h1>
         </div>
-        <select id="escolha1" onChange={(e) => handleSelectChange(e, setFormato)}>
-          <option value="0">Selecione</option>
-          <option value="10">88x48mm (10,00)</option>
-          <option value="15">50x50mm (15,00)</option>
+        <select id="escolha1" onChange={(e) => mudancadevalor(e, setFormato)} value={formato}>
+          <option value={0}>Selecione</option>
+          <option value={20}>400x600mm</option>
+          <option value={25}>600x900mm</option>
+          <option value={30}>700x1000mm</option>
+          <option value={35}>1000x1500mm</option>
         </select>
 
         {/* Seção de Cores */}
@@ -71,12 +72,9 @@ function CartaoVisita() {
           <FontAwesomeIcon id="icon" icon={faPalette} />
           <h1>Cores</h1>
         </div>
-        <select id="escolha2" onChange={(e) => handleSelectChange(e, setCores)}>
-          <option value="0">Selecione</option>
-          <option value="10">1x0 cores (preto) (10,00)</option>
-          <option value="20">4x0 cores (colorido frente) (20,00)</option>
-          <option value="30">4x1 cores (Colorido frente e 1 cor verso) (30,00)</option>
-          <option value="40">4x4 cores (Colorido Frente e verso) (40,00)</option>
+        <select id="escolha2" onChange={(e) => mudancadevalor(e, setCores)} value={cores}>
+          <option value={0}>Selecione</option>
+          <option value={40}>4x0 cores (Colorido frente)</option>
         </select>
 
         {/* Seção de Acabamento */}
@@ -84,14 +82,14 @@ function CartaoVisita() {
           <FontAwesomeIcon id="icon" icon={faSwatchbook} />
           <h1>Acabamento</h1>
         </div>
-        <select id="escolha4" onChange={(e) => handleSelectChange(e, setAcabamento)}>
-          <option value="0">Selecione</option>
-          <option value="10">Refilados (10,00)</option>
-          <option value="15">Cantos Arredondados (15,00)</option>
+        <select id="escolha4" onChange={(e) => mudancadevalor(e, setAcabamento)} value={acabamento}>
+          <option value={0}>Selecione</option>
+          <option value={10}>Bastão/Cordão</option>
+          <option value={15}>Ilhós</option>
         </select>
 
         {/* Botão para limpar valores */}
-        <button id="limparcv" onClick={resetValues}>Limpar</button>
+        <button id="limpar" type="button" onClick={limparvalor}>Limpar</button>
       </form>
 
       {/* Seção à direita com o valor total e botões de navegação */}
@@ -109,4 +107,4 @@ function CartaoVisita() {
   );
 }
 
-export default CartaoVisita;
+export default Banner;
