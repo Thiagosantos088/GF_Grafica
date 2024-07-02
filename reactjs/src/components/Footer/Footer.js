@@ -1,6 +1,6 @@
-import whats from '../../img/wh.png'
-import face from '../../img/F.png'
-import insta from '../../img/IN.png'
+import whats from '../../img/wha.png'
+import face from '../../img/facebook2.png';
+import insta from '../../img/instagram2.png';
 import logo from '../../img/logoatu.png'
 import {Link} from 'react-router-dom';
 import "./Footer.css"

@@ -7,11 +7,12 @@ import Sobrenos from './components/sobrenos/sobrenos';
  import Paginapagamento from './components/Paginapagamento/paginapagamento';
  import Pagamentosucesso from './components/Pagamentosusesso/Pagamentosucesso';
  import Footer from './components/Footer/Footer';
-  // import Teladeregistro from './components/Teladeregistro/Teladeregistro'
+import Teladeregistro from './components/Teladeregistro/Teladeregistro'
 import Telalogin from './components/TelaLogin/Telalogin';
   import CartaoVisita from './components/Cartao_de_visita/CartaoVisita';
 import Banner from './components/Banner/Banner';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter  } from 'react-router-dom';
+import { UserProvider } from './components/Contextogeral/UserGeral';
 
  function App() {
    return (
@@ -26,10 +27,13 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter  } from 'react-ro
           <Route path='/paginapagamento' element={<Paginapagamento/>} />
           <Route path='/pagamentosucesso' element={<Pagamentosucesso/>} />
           <Route path='/Sobrenos' element={<Sobrenos/>}/>
-          <Route path='/Telalogin' element={<Telalogin/>}/>
-          {/*<Route path='/teladeregistro' element={<Teladeregistro/>} /> */}
+          {/* <Route path='/Telalogin' element={<Telalogin/>}/> */}
+          <Route path='/teladeregistro' element={<Teladeregistro/>} /> 
           <Route path='/cartaovisita' element={<CartaoVisita/>} />
           <Route path='/Banner' element={<Banner/>} /> 
+           <UserProvider>
+            <Route path='/Telalogin' element={Telalogin}/>
+          </UserProvider>
           </Routes>
      </BrowserRouter>
     

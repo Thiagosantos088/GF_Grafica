@@ -22,7 +22,7 @@ return(
         <NavLink to="/sobrenos">Sobre nos</NavLink>
         <NavLink to="/contatos">Contatos</NavLink>
         <div className='logos'>
-        <img id='carrinho' src={carrinho} />
+
         <NavLink to="/telalogin">
         <img id='usuario' src={usuario} alt='' />
         </NavLink>
